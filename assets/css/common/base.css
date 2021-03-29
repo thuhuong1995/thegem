@@ -1,0 +1,341 @@
+:root {
+  --txt-color: #3c3950;
+  --black-color: #000;
+  --white-color: #ffffff;
+  --gray-color: #5f727f;
+  --primary-color: #00bcd4;
+  --light-color: #f4f6f7;
+  --border-color: #dfe5e8;
+  --red-color: #ff5252;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "SourceSansPro-Regular";
+  box-sizing: border-box;
+}
+a,
+a:hover,
+a:not(:hover) {
+  text-decoration: none;
+  transition: 0.3s;
+}
+.color-gray {
+  color: var(--gray-color);
+}
+.color-white {
+  color: var(--white-color);
+}
+.color-txt {
+  color: var(--txt-color);
+}
+.color-pri {
+  color: var(--primary-color) !important;
+}
+.bg-pri {
+  background-color: var(--primary-color);
+}
+.bg-gray {
+  background-color: var(--gray-color);
+}
+.bg-color-txt {
+  background-color: var(--txt-color);
+}
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+.border-pri {
+  border: 1px solid var(--primary-color) !important;
+}
+.btn-pri {
+  border: none;
+  outline: none;
+  min-width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Montserrat-Bold";
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-centerY {
+  align-items: center;
+}
+.flex-centerX {
+  justify-content: center;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.m-0 {
+  margin: 0;
+}
+.title-common {
+  font-size: 19px;
+  font-weight: bold;
+  position: relative;
+  font-family: "Montserrat-bold";
+}
+.subtitle-common {
+  font-size: 14px;
+  font-family: "Montserrat-bold";
+}
+.title-has-symbol:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -17px;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid red;
+}
+.desc-common {
+  font-family: "SourceSansPro-Regular";
+  color: var(--gray-color);
+  font-size: 16px;
+}
+.smdesc-common {
+  font-family: "SourceSansPro-Regular";
+  color: var(--gray-color);
+  font-size: 14px;
+}
+.margin-common {
+  margin-top: 55px;
+}
+
+.smproduct-cart {
+  padding: 0;
+}
+.smproduct-item {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 100px calc(100% - 100px);
+  margin-bottom: 1px solid var(--border-color);
+}
+.smproduct-item--square {
+  grid-template-columns: 80px calc(100% - 80px);
+  height: 70px;
+}
+.smproduct-item:last-child {
+  border-bottom: none;
+}
+.smproduct-img {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+}
+.smproduct-img--square {
+  border-radius: 0 !important;
+}
+.smproduct-img--square .smproduct-img--has-percent {
+  top: 10px;
+  right: -10px;
+}
+.smproduct-img--bold {
+  background-color: #99a9b5;
+}
+.smproduct-img--pale {
+  background-color: #c9d6d8;
+}
+.smproduct-img--pales {
+  background-color: #c5c5c5;
+}
+.smproduct-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.smproduct-img--has-percent {
+  position: absolute;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  font-size: 16px;
+  z-index: 2;
+}
+.smproduct-txt {
+  margin: auto 0;
+}
+.rate-common {
+  margin: 4px 0;
+}
+.rate-icon {
+  color: var(--gray-color);
+  font-size: 14px;
+}
+.rate-icon.rated {
+  color: #ffc107;
+}
+.smproduct-cost {
+  font-family: "SourceSansPro-Light";
+  font-size: 20px;
+}
+.product-card{
+  background-color: #f0f3f2;
+  position: relative;
+  min-height: 470px;
+  display: flex;
+  flex-flow: column;
+}
+.product-card__sort{
+  min-height: 345px;
+}
+.product-card.product-card--bold{
+  background-color: #d8e3e8;
+}
+.product-card__img{
+  width: 100%;
+  height: 210px;
+}
+.product-card__img--heigh{
+  height: 325px;
+  width: 100%;
+}
+.product-card__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.product-card__name--bottline{
+  margin-bottom: 12px;
+  position: relative;
+}
+.product-card__name--bottline::after{
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid var(--primary-color);
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  transition: 0.3s;
+}
+.product-card:hover .product-card__name--bottline::after{
+  width: 80px;
+  transition: 0.3s;
+}
+.product-card__name--topline{
+  padding-top: 12px;
+  position: relative;
+}
+.product-card__name--topline::after{
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid var(--primary-color);
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  transition: 0.3s;
+}
+.product-card:hover .product-card__name--topline::after{
+  width: 80px;
+  transition: 0.3s;
+}
+.product-card:hover .product-card__img--heigh{
+  background-color: #a8e2e9;
+}
+
+.filter-common {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.filter-common::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 25px;
+  left: 0;
+  top: 30px;
+}
+.home-product__item .home-product__txt{
+  background-color: var(--white-color);
+}
+.product-card__detail{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #99a9b5;
+}
+.product-card__detail i{
+  margin-right: 8px;
+  font-size: 16px !important;
+}
+.product-card__detail i:last-child{
+  margin-right: 0;
+}
+.product-card__circle--sale{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 18px;
+  right: -13px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat-Bold';
+  font-size: 14px;
+  color: var(--white-color);
+  z-index: 2;
+}
+.product-card__circle--new{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  right: -10px;
+  background-color: var(--txt-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat-Bold';
+  font-size: 14px;
+  color: var(--white-color);
+  z-index: 1;
+}
+.name-common{
+  font-size: 24px;
+  margin: 30px 0;
+}
+.border-bottom-dashed{
+  border-bottom: 1px dashed var(--gray-color);
+}
+.show{
+  display: block !important;
+}
+.hidden{
+  display: none !important;
+}

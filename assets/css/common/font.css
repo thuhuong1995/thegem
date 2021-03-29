@@ -1,0 +1,64 @@
+/* Montserrat */
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("../../fonts/Montserrat/Montserrat-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Extra";
+  src: url("../../fonts/Montserrat/Montserrat-ExtraLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../../fonts/Montserrat/Montserrat-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* SourceSan */
+
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("../../fonts/SourceSansPro/SourceSansPro-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("../../fonts/SourceSansPro/SourceSansPro-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Extra";
+  src: url("../../fonts/SourceSansPro/SourceSansPro-ExtraLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("../../fonts/SourceSansPro/SourceSansPro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Light";
+  src: url("../../fonts/SourceSansPro/SourceSansPro-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
