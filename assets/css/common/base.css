@@ -1,5 +1,5 @@
 :root {
-  --txt-color: #3c3950;
+  --charcoal-color: #3c3950;
   --black-color: #000;
   --white-color: #ffffff;
   --gray-color: #5f727f;
@@ -8,7 +8,6 @@
   --border-color: #dfe5e8;
   --red-color: #ff5252;
 }
-
 *,
 *::after,
 *::before {
@@ -24,50 +23,62 @@ a:not(:hover) {
   text-decoration: none;
   transition: 0.3s;
 }
+.Montserrat-Bold {
+  font-family: "Montserrat-Bold";
+}
+.Montserrat-Light {
+  font-family: "Montserrat-Light";
+}
+.SourceSansPro-Regular {
+  font-family: "SourceSansPro-Regular";
+}
+.SourceSansPro-Light {
+  font-family: "SourceSansPro-Light";
+}
+/*  */
 .color-gray {
   color: var(--gray-color);
 }
 .color-white {
   color: var(--white-color);
 }
-.color-txt {
-  color: var(--txt-color);
+.color-charcoal {
+  color: var(--charcoal-color);
 }
-.color-pri {
+.color-primary {
   color: var(--primary-color) !important;
 }
-.bg-pri {
+.bg-primary {
   background-color: var(--primary-color);
 }
 .bg-gray {
   background-color: var(--gray-color);
 }
-.bg-color-txt {
-  background-color: var(--txt-color);
+.bg-color-charcoal {
+  background-color: var(--charcoal-color);
 }
 .bg-overlay {
   background-color: rgba(0, 0, 0, 0);
 }
-.border-pri {
+.border-primary {
   border: 1px solid var(--primary-color) !important;
 }
-.btn-pri {
+.btn-primary {
   border: none;
   outline: none;
   min-width: 100px;
   height: 30px;
   border-radius: 3px;
   font-size: 14px;
-  font-family: "Montserrat-Bold";
 }
 
 .d-flex {
   display: flex;
 }
-.flex-centerY {
+.align-center {
   align-items: center;
 }
-.flex-centerX {
+.justify-center {
   justify-content: center;
 }
 .flex-between {
@@ -83,11 +94,9 @@ a:not(:hover) {
   font-size: 19px;
   font-weight: bold;
   position: relative;
-  font-family: "Montserrat-bold";
 }
 .subtitle-common {
   font-size: 14px;
-  font-family: "Montserrat-bold";
 }
 .title-has-symbol:after {
   position: absolute;
@@ -98,12 +107,10 @@ a:not(:hover) {
   border-bottom: 8px solid red;
 }
 .desc-common {
-  font-family: "SourceSansPro-Regular";
   color: var(--gray-color);
   font-size: 16px;
 }
 .smdesc-common {
-  font-family: "SourceSansPro-Regular";
   color: var(--gray-color);
   font-size: 14px;
 }
@@ -185,7 +192,6 @@ a:not(:hover) {
   color: #ffc107;
 }
 .smproduct-cost {
-  font-family: "SourceSansPro-Light";
   font-size: 20px;
 }
 .product-card {
@@ -306,7 +312,6 @@ a:not(:hover) {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat-Bold";
   font-size: 14px;
   color: var(--white-color);
   z-index: 2;
@@ -317,12 +322,11 @@ a:not(:hover) {
   height: 50px;
   top: 66px;
   right: -10px;
-  background-color: var(--txt-color);
+  background-color: var(--charcoal-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat-Bold";
   font-size: 14px;
   color: var(--white-color);
   z-index: 1;
