@@ -6,6 +6,9 @@
     @include maxWidth(575px) {
       margin: 0 -15px;
     }
+    @include maxWidth(767px) {
+      margin: 0 -15px;
+    }
   }
   &-item {
     padding: 20px 0;

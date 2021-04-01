@@ -7,10 +7,9 @@
   }
 
   &__menu {
-    padding-left: 50px;
-
+    padding-left: 45px;
     @include maxWidth(1242px) {
-      padding-left: 20px;
+      padding-left: 15px;
     }
   }
   &__list {
@@ -32,9 +31,9 @@
 
   &__phone {
     @include flex($items: center, $content: center);
-    padding-right: 50px;
+    padding-right: 45px;
     @include maxWidth(1242px) {
-      padding-right: 20px;
+      padding-right: 15px;
     }
     .header-top__phone i {
       margin-right: 10px;
@@ -64,9 +63,9 @@
   height: 100%;
   border-right: 1px solid $border-color;
   border-left: 1px solid $border-color;
-  padding: 0 50px;
+  padding: 0 45px;
   @include maxWidth(1242px) {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   &__item {
@@ -102,7 +101,7 @@
 /* header menu */
 .header-menu {
   margin-left: 20px;
-  @include maxWidth(766px) {
+  @include maxWidth(991px) {
     order: 3;
 
     margin: 10px auto 0 auto;
@@ -152,8 +151,11 @@
   &__item {
     margin-left: 20px;
     @include maxWidth(575px) {
-      margin-left: 10px;
+      margin-left: 5px;
     }
+  }
+  &__item:first-child {
+    margin-left: 0;
   }
   &__item--has-txt {
     margin-left: 15px;
@@ -193,6 +195,7 @@
   }
   @include maxWidth(575px) {
     margin-left: 10px;
+    width: 30px;
   }
 }
 
@@ -211,6 +214,9 @@
 
 .header-bar__btn span:nth-child(1) {
   top: -6px;
+  @include maxWidth(575px) {
+    top: -4px;
+  }
 }
 
 .header-bar__btn span:nth-child(2) {
@@ -219,6 +225,9 @@
 
 .header-bar__btn span:nth-child(3) {
   top: 18px;
+  @include maxWidth(575px) {
+    top: 16px;
+  }
 }
 @include maxWidth(992px) {
   .header-bar__btn.open {

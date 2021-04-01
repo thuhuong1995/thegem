@@ -108,6 +108,9 @@
   padding: 110px 0 0 0;
   &__left {
     margin-left: -21px;
+    @include maxWidth(767px) {
+      margin-left: 0;
+    }
     @include maxWidth(575px) {
       margin-left: 0;
     }
@@ -255,7 +258,7 @@
     margin-top: 30px;
     margin-right: -31px;
     @include maxWidth(767px) {
-      margin: 0 -15px;
+      margin: 15px -15px 0 -15px;
     }
   }
   &__item {
@@ -403,6 +406,9 @@
     @include maxWidth(575px) {
       margin-right: -15px;
     }
+    @include maxWidth(767px) {
+      margin-right: -15px;
+    }
     .home-product__kind--txt {
       text-align: center;
       background-color: #f9fbfc;
@@ -546,6 +552,9 @@
   .home-product__list {
     margin-right: -42px;
     @media (max-width: 575px) {
+      margin-right: -15px;
+    }
+    @include maxWidth(767px) {
       margin-right: -15px;
     }
     .product-card {
@@ -806,6 +815,9 @@
     @include maxWidth(575px) {
       margin: 0 -15px;
     }
+    @include maxWidth(767px) {
+      margin: 0 -15px;
+    }
   }
   &__title {
     margin-bottom: 20px;
@@ -821,6 +833,9 @@
   }
   &__txt {
     padding: 10px 10px 10px 0;
+    @include maxWidth(767px) {
+      padding: 0;
+    }
   }
 }
 .home-slogan {
@@ -843,8 +858,9 @@
     @media (max-width: 991px) {
       font-size: 28px;
     }
-    @include maxWidth(767px) {
+    @include maxWidth(710px) {
       order: 3;
+      margin: 0 auto;
     }
   }
   &__btn {
