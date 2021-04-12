@@ -5,13 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/common/grid.css" />
-    <link rel="stylesheet" href="assets/css/pages/home.css" />
-    <link rel="stylesheet" href="assets/css/common/base.css" />
-    <link rel="stylesheet" href="assets/css/common/font.css" />
-    <link rel="stylesheet" href="assets/js/main.js" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script defer src="assets/libr/jquery/dist/jquery.min.js"></script>
+    <script defer src="assets/js/main.js" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
   </head>
   <body>
@@ -20,89 +16,100 @@
       <header class="header">
         <div class="header-nav">
           <!-- header top -->
-          <div class="header-top">
+          <div class="header-top bg-light">
             <div class="container">
-              <div class="row">
-                <ul class="header-top__list">
-                  <li class="header-top__phone">
-                    <i class="fas fa-headphones-alt"></i>
-                    <a href="" class="header-top__link">+1 916-85-2235</a>
+              <ul class="header-top__list color-gray p-0 m-0 l-style-none">
+                <li class="header-top__phone">
+                  <i class="fas fa-headphones-alt"></i>
+                  <a href="" class="header-top__link color-gray"
+                    >+1 916-85-2235</a
+                  >
+                </li>
+                <div class="header-social">
+                  <li class="header-social__item">
+                    <a href="" class="header-top__link color-gray">
+                      <i class="header-social__icon fab fa-twitter"></i>
+                    </a>
                   </li>
-                  <div class="header-social">
-                    <li class="header-social__item">
-                      <a href="" class="header-top__link">
-                        <i class="header-social__icon fab fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li class="header-social__item">
-                      <a href="" class="header-top__link">
-                        <i class="header-social__icon fab fa-facebook-f"></i>
-                      </a>
-                    </li>
-                    <li class="header-social__item">
-                      <a href="" class="header-top__link">
-                        <i class="header-social__icon fab fa-linkedin-in"></i>
-                      </a>
-                    </li>
-                    <li class="header-social__item">
-                      <a href="" class="header-top__link">
-                        <i class="header-social__icon fab fa-glide-g"></i>
-                      </a>
-                    </li>
-                    <li class="header-social__item">
-                      <a href="" class="header-top__link">
-                        <i
-                          class="header-social__icon fab fa-instagram-square"
-                        ></i>
-                      </a>
-                    </li>
-                    <li class="header-social__item">
-                      <a href="" class="header-top__link">
-                        <i
-                          class="header-social__icon header-social__icon--youtube fab fa-youtube"
-                        ></i>
-                      </a>
-                    </li>
-                    <li class="header-social__item">
-                      <a href="" class="header-top__link">
-                        <i class="header-social__icon fab fa-pinterest-p"></i>
-                      </a>
-                    </li>
-                  </div>
-                  <div class="header-top__menu">
-                    <li class="header-top__item">
-                      <i class="fas fa-chevron-right"></i>
-                      <a href="" class="header-top__link"> My Account </a>
-                    </li>
-                    <li class="header-top__item">
-                      <i class="fas fa-chevron-right"></i>
-                      <a href="" class="header-top__link"> FAQ </a>
-                    </li>
-                    <li class="header-top__item">
-                      <i class="fas fa-chevron-right"></i>
-                      <a href="" class="header-top__link"> Contact Us </a>
-                    </li>
-                    <li class="header-top__item">
-                      <i class="fas fa-chevron-right"></i>
-                      <a href="" class="header-top__link">
-                        Newsletter Signup
-                      </a>
-                    </li>
-                    <li class="header-top__item">
-                      <i class="fas fa-chevron-right"></i>
-                      <a href="" class="header-top__link"> Shipping Teams </a>
-                    </li>
-                  </div>
-                  <button class="header-top__btn btn-pri">My Wishlist</button>
-                </ul>
-              </div>
+                  <li class="header-social__item">
+                    <a href="" class="header-top__link color-gray">
+                      <i class="header-social__icon fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="header-social__item">
+                    <a href="" class="header-top__link color-gray">
+                      <i class="header-social__icon fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li class="header-social__item">
+                    <a href="" class="header-top__link color-gray">
+                      <i class="header-social__icon fab fa-glide-g"></i>
+                    </a>
+                  </li>
+                  <li class="header-social__item">
+                    <a href="" class="header-top__link color-gray">
+                      <i
+                        class="header-social__icon fab fa-instagram-square"
+                      ></i>
+                    </a>
+                  </li>
+                  <li class="header-social__item">
+                    <a href="" class="header-top__link color-gray">
+                      <i
+                        class="header-social__icon color-red header-social__icon--youtube fab fa-youtube"
+                      ></i>
+                    </a>
+                  </li>
+                  <li class="header-social__item">
+                    <a href="" class="header-top__link color-gray">
+                      <i class="header-social__icon fab fa-pinterest-p"></i>
+                    </a>
+                  </li>
+                </div>
+                <div class="header-top__menu d-flex">
+                  <li class="header-top__item">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="" class="header-top__link color-gray">
+                      My Account
+                    </a>
+                  </li>
+                  <li class="header-top__item">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="" class="header-top__link color-gray"> FAQ </a>
+                  </li>
+                  <li class="header-top__item">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="" class="header-top__link color-gray">
+                      Contact Us
+                    </a>
+                  </li>
+                  <li class="header-top__item">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="" class="header-top__link color-gray">
+                      Newsletter Signup
+                    </a>
+                  </li>
+                  <li class="header-top__item">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="" class="header-top__link color-gray">
+                      Shipping Teams
+                    </a>
+                  </li>
+                </div>
+                <button class="header-top__btn btn-primary color-white">
+                  My Wishlist
+                </button>
+              </ul>
             </div>
           </div>
           <div class="header-bar">
             <div class="container">
-              <div class="row d-flex flex-centerY flex-between">
+              <div class="d-flex align-center flex-between flex-wrap">
                 <div class="header-logo">
-                  <a href="" class="header-logo__link color-txt">
+                  <a
+                    href=""
+                    class="header-logo__link Montserrat-Bold color-charcoal"
+                  >
                     <img
                       src="assets/img/logo.png"
                       alt=""
@@ -112,54 +119,81 @@
                   </a>
                 </div>
                 <div class="header-menu">
-                  <ul class="header-menu__list">
+                  <ul
+                    class="header-menu__list l-style-none d-flex flex-wrap m-0 p-0"
+                  >
                     <li class="header-menu__item">
-                      <a href="" class="header-menu__item--link">HOME</a>
+                      <a href="" class="header-menu__item--link Montserrat-Bold"
+                        >HOME</a
+                      >
                     </li>
                     <li class="header-menu__item">
-                      <a href="" class="header-menu__item--link">PAGES</a>
+                      <a href="" class="header-menu__item--link Montserrat-Bold"
+                        >PAGES</a
+                      >
                     </li>
                     <li class="header-menu__item">
-                      <a href="" class="header-menu__item--link">BLOG</a>
+                      <a href="" class="header-menu__item--link Montserrat-Bold"
+                        >BLOG</a
+                      >
                     </li>
                     <li class="header-menu__item">
-                      <a href="" class="header-menu__item--link">PORTFOLIOS</a>
+                      <a href="" class="header-menu__item--link Montserrat-Bold"
+                        >PORTFOLIOS</a
+                      >
                     </li>
                     <li class="header-menu__item active">
-                      <a href="" class="header-menu__item--link">SHOP</a>
+                      <a href="" class="header-menu__item--link Montserrat-Bold"
+                        >SHOP</a
+                      >
                     </li>
                     <li class="header-menu__item">
-                      <a href="" class="header-menu__item--link">FEATURE</a>
+                      <a href="" class="header-menu__item--link Montserrat-Bold"
+                        >FEATURE</a
+                      >
                     </li>
                     <li class="header-menu__item">
-                      <a href="" class="header-menu__item--link">ELEMENT</a>
+                      <a href="" class="header-menu__item--link Montserrat-Bold"
+                        >ELEMENT</a
+                      >
                     </li>
                   </ul>
                 </div>
-                <div class="header-tool">
-                  <div class="header-tool__item">
-                    <img
-                      src="assets/img/languageusa.png"
-                      alt=""
-                      class="header-tool__language--eng"
-                    />
-                    <img
-                      src="assets/img/languagevie.png"
-                      alt=""
-                      class="header-tool__language--vietnam"
-                    />
+                <div class="header-bar__group d-flex flex-between align-center">
+                  <div class="header-tool">
+                    <div class="header-tool__item">
+                      <img
+                        src="assets/img/languageusa.png"
+                        alt=""
+                        class="header-tool__language--eng"
+                      />
+                      <img
+                        src="assets/img/languagevie.png"
+                        alt=""
+                        class="header-tool__language--vietnam"
+                      />
+                    </div>
+                    <div class="header-tool__item">
+                      <i class="fas fa-search"></i>
+                    </div>
+                    <div class="header-tool__item">
+                      <img
+                        src="assets/img/cart.png"
+                        alt=""
+                        class="header-tool__item--cart"
+                      />
+                    </div>
+                    <div
+                      class="header-tool__item--has-txt color-white bg-primary"
+                    >
+                      2
+                    </div>
                   </div>
-                  <div class="header-tool__item">
-                    <i class="fas fa-search"></i>
+                  <div class="header-bar__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                   </div>
-                  <div class="header-tool__item">
-                    <img
-                      src="assets/img/cart.png"
-                      alt=""
-                      class="header-tool__item--cart"
-                    />
-                  </div>
-                  <div class="header-tool__item--has-txt color-white">2</div>
                 </div>
               </div>
             </div>
@@ -209,102 +243,152 @@
         <div class="home-content">
           <div class="container">
             <div class="row">
-              <div class="col col-lg-3">
+              <div class="col col-sm-4 col-md-3 col-lg-3 col-xl-3">
                 <!-- content left -->
-                <div class="home-content__left">
+                <aside class="home-content__left">
                   <!-- Categories  -->
                   <div class="home-category">
                     <div class="home-category__title">
-                      <span class="m-0 title-common title-has-symbol"
+                      <span
+                        class="m-0 title-common Montserrat-Bold title-has-symbol"
                         >CATEGORY</span
                       >
                     </div>
-                    <ul class="home-category__list">
-                      <li onclick="showVersion()"
-                        class="home-category__item subtitle-common home-category__item--has-submenu"
+                    <ul class="home-category__list p-0">
+                      <li
+                        onclick="showVersion()"
+                        class="home-category__item subtitle-common Montserrat-Bold home-category__item--has-submenu"
                       >
                         <p class="m-0">VERSION</p>
                         <i class="fas fa-chevron-right"></i>
-                        
                       </li>
-                      <ul class="home-category__submenu" id="version-list">
-                        <li class="home-category__subitem desc-common">
+                      <ul class="home-category__submenu p-0" id="version-list">
+                        <li
+                          class="home-category__subitem desc-common SourceSansPro-Regular"
+                        >
                           Item 1
                         </li>
-                        <li class="home-category__subitem desc-common">
+                        <li
+                          class="home-category__subitem desc-common SourceSansPro-Regular"
+                        >
                           Item 2
                           <i class="fas fa-chevron-right"></i>
+                          <i class="fas fa-chevron-down hidden"></i>
                         </li>
-                        <li class="home-category__subitem desc-common">
+                        <li
+                          class="home-category__subitem desc-common SourceSansPro-Regular"
+                        >
                           Item 3
                           <i class="fas fa-chevron-right"></i>
+                          <i class="fas fa-chevron-down hidden"></i>
                         </li>
-                        <li class="home-category__subitem desc-common">
+                        <li
+                          class="home-category__subitem desc-common SourceSansPro-Regular"
+                        >
                           Item 4
                           <i class="fas fa-chevron-right"></i>
+                          <i class="fas fa-chevron-down hidden"></i>
                         </li>
                       </ul>
-                      <li class="home-category__item subtitle-common">
+                      <li
+                        class="home-category__item subtitle-common Montserrat-Bold"
+                      >
                         LOREM IPSUM
                       </li>
-                      <li onclick="showProin()"
-                        class="home-category__item subtitle-common home-category__item--has-submenu"
+                      <li
+                        onclick="showProin()"
+                        class="home-category__item subtitle-common Montserrat-Bold home-category__item--has-submenu"
                       >
                         <p class="m-0">PROIN</p>
                         <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-chevron-down hidden"></i>
                       </li>
-                      <ul class="home-category__submenu" id="proin-list">
-                        <li class="home-category__subitem desc-common">
+                      <ul class="home-category__submenu p-0" id="proin-list">
+                        <li
+                          class="home-category__subitem desc-common SourceSansPro-Regular"
+                        >
                           July 2015
                         </li>
-                        <li class="home-category__subitem desc-common">
+                        <li
+                          class="home-category__subitem desc-common SourceSansPro-Regular"
+                        >
                           January 2013
                           <i class="fas fa-chevron-right"></i>
+                          <i class="fas fa-chevron-down hidden"></i>
                         </li>
-                        <li class="home-category__subitem desc-common">
+                        <li
+                          class="home-category__subitem desc-common SourceSansPro-Regular"
+                        >
                           March 2012
                           <i class="fas fa-chevron-right"></i>
+                          <i class="fas fa-chevron-down hidden"></i>
                         </li>
-                        <li onclick="showSecondmenu()"
-                          class="home-category__subitem desc-common home-category__sublist--has-smmenu"
+                        <li
+                          onclick="showSecondmenu()"
+                          class="home-category__subitem desc-common SourceSansPro-Regular home-category__sublist--has-smmenu"
                         >
                           January 2012
                           <i class="fas fa-chevron-right"></i>
+                          <i class="fas fa-chevron-down hidden"></i>
                         </li>
-                        <ul class="home-category__smmenu" id="second-menu">
-                          <li class="home-category__smitem smdesc-common">
+                        <ul class="home-category__smmenu p-0" id="second-menu">
+                          <li
+                            class="home-category__smitem smdesc-common SourceSansPro-Regular"
+                          >
                             July 2015
                           </li>
-                          <li class="home-category__smitem smdesc-common">
+                          <li
+                            class="home-category__smitem smdesc-common SourceSansPro-Regular"
+                          >
                             January 2013
                             <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-down hidden"></i>
                           </li>
-                          <li class="home-category__smitem smdesc-common">
+                          <li
+                            class="home-category__smitem smdesc-common SourceSansPro-Regular"
+                          >
                             March 2012
                             <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-down hidden"></i>
                           </li>
-                          <li class="home-category__smitem smdesc-common">
+                          <li
+                            class="home-category__smitem smdesc-common SourceSansPro-Regular"
+                          >
                             January 2012
                             <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-down hidden"></i>
                           </li>
                         </ul>
                       </ul>
-                      <li class="home-category__item subtitle-common">
+                      <li
+                        class="home-category__item subtitle-common Montserrat-Bold"
+                      >
                         GRAVIDA
                         <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-chevron-down hidden"></i>
                       </li>
-                      <li class="home-category__item subtitle-common">
+                      <li
+                        class="home-category__item subtitle-common Montserrat-Bold"
+                      >
                         NIBH VEL VELIT
                         <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-chevron-down hidden"></i>
                       </li>
-                      <li class="home-category__item subtitle-common">
+                      <li
+                        class="home-category__item subtitle-common Montserrat-Bold"
+                      >
                         AUCTOR
                       </li>
-                      <li class="home-category__item subtitle-common">
+                      <li
+                        class="home-category__item subtitle-common Montserrat-Bold"
+                      >
                         ALIQUET
                         <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-chevron-down hidden"></i>
                       </li>
-                      <li class="home-category__item subtitle-common">
+                      <li
+                        class="home-category__item subtitle-common Montserrat-Bold"
+                      >
                         AENEAN
                       </li>
                     </ul>
@@ -313,7 +397,7 @@
                   <div class="home-search margin-common">
                     <input
                       type="text"
-                      class="smdesc-common home-search__input"
+                      class="smdesc-common SourceSansPro-Regular home-search__input"
                       placeholder="Search for product"
                     />
                     <i class="fas fa-search"></i>
@@ -322,7 +406,8 @@
                   <!-- by price -->
                   <div class="home-filter home-filter__price margin-common">
                     <div class="home-filter__title">
-                      <span class="title-common title-has-symbol color-txt"
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol color-charcoal"
                         >FILTER BY PRICE</span
                       >
                     </div>
@@ -338,16 +423,18 @@
                     </div>
                     <div class="home-filter__select">
                       <button
-                        class="home-filter__btn btn-pri border-pri bg-overlay color-pri"
+                        class="home-filter__btn btn-primary border-primary bg-overlay color-primarymary Montserrat-Bold"
                       >
                         FILTER
                       </button>
                       <div class="home-filter__price">
-                        <span class="home-filter__price--label smdesc-common"
+                        <span
+                          class="home-filter__price--label smdesc-common SourceSansPro-Regular"
                           >Price:
                         </span>
                         <span class="home-filter__price--min">$345</span>
-                        <span class="home-filter__price--line smdesc-common"
+                        <span
+                          class="home-filter__price--line smdesc-common SourceSansPro-Regular"
                           >-</span
                         >
                         <span class="home-filter__price--max">$1640</span>
@@ -357,23 +444,29 @@
                   <!-- by color -->
                   <div class="home-filter home-filter__color margin-common">
                     <div class="home-filter__title">
-                      <span class="title-common title-has-symbol"
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol"
                         >FILTER BY COLOR</span
                       >
                     </div>
                     <div class="home-filter__input filter-common">
-                      <span class="home-filter__input-label desc-common"
+                      <span
+                        class="home-filter__input-label desc-common SourceSansPro-Regular"
                         >Any color</span
                       >
                       <i class="home-filter__input-icon fa fa-chevron-down"></i>
                       <ul class="home-filter__list">
                         <li class="home-filter__item">
-                          <a href="" class="home-filter__link desc-common"
+                          <a
+                            href=""
+                            class="home-filter__link desc-common SourceSansPro-Regular"
                             >Color 1</a
                           >
                         </li>
                         <li class="home-filter__item">
-                          <a href="" class="home-filter__link desc-common"
+                          <a
+                            href=""
+                            class="home-filter__link desc-common SourceSansPro-Regular"
                             >Color 2</a
                           >
                         </li>
@@ -383,23 +476,29 @@
                   <!-- by size`` -->
                   <div class="home-filter home-filter__size margin-common">
                     <div class="home-filter__title">
-                      <span class="title-common title-has-symbol"
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol"
                         >FILTER BY SIZE</span
                       >
                     </div>
                     <div class="home-filter__input filter-common">
-                      <span class="home-filter__input-label desc-common"
+                      <span
+                        class="home-filter__input-label desc-common SourceSansPro-Regular"
                         >Any size</span
                       >
                       <i class="home-filter__input-icon fa fa-chevron-down"></i>
                       <ul class="home-filter__list">
                         <li class="home-filter__item">
-                          <a href="" class="home-filter__link desc-common"
+                          <a
+                            href=""
+                            class="home-filter__link desc-common SourceSansPro-Regular"
                             >size 1</a
                           >
                         </li>
                         <li class="home-filter__item">
-                          <a href="" class="home-filter__link desc-common"
+                          <a
+                            href=""
+                            class="home-filter__link desc-common SourceSansPro-Regular"
                             >size 2</a
                           >
                         </li>
@@ -409,7 +508,8 @@
                   <!-- RECENTLY VIEWED -->
                   <div class="home-recently margin-common">
                     <div class="home-recently__title">
-                      <span class="title-common title-has-symbol"
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol"
                         >RECENTLY VIEWED</span
                       >
                     </div>
@@ -420,7 +520,7 @@
                         </div>
                         <div class="smproduct-txt home-recently__txt">
                           <div
-                            class="smproduct-title home-recently__title desc-common"
+                            class="smproduct-title home-recently__title desc-common SourceSansPro-Regular"
                           >
                             Product Title Here
                           </div>
@@ -433,7 +533,9 @@
                             <i class="rate-icon rated fas fa-star"></i>
                             <i class="rate-icon fas fa-star"></i>
                           </div>
-                          <div class="smproduct-cost home-recently__cost">
+                          <div
+                            class="smproduct-cost SourceSansPro-Light home-recently__cost"
+                          >
                             $35.00
                           </div>
                         </div>
@@ -445,7 +547,7 @@
                         </div>
                         <div class="smproduct-txt home-recently__txt">
                           <div
-                            class="smproduct-title home-recently__title desc-common"
+                            class="smproduct-title home-recently__title desc-common SourceSansPro-Regular"
                           >
                             Product Title Here
                           </div>
@@ -456,7 +558,9 @@
                             <i class="rate-icon rated fas fa-star"></i>
                             <i class="rate-icon rated fas fa-star"></i>
                           </div>
-                          <div class="smproduct-cost home-recently__cost">
+                          <div
+                            class="smproduct-cost SourceSansPro-Light home-recently__cost"
+                          >
                             $35.00 - $89.99
                           </div>
                         </div>
@@ -467,11 +571,13 @@
                         </div>
                         <div class="smproduct-txt home-recently__txt">
                           <div
-                            class="smproduct-title home-recently__title desc-common"
+                            class="smproduct-title home-recently__title desc-common SourceSansPro-Regular"
                           >
                             Product Title Here
                           </div>
-                          <div class="smproduct-cost home-recently__cost">
+                          <div
+                            class="smproduct-cost SourceSansPro-Light home-recently__cost"
+                          >
                             $35.00
                           </div>
                         </div>
@@ -481,84 +587,149 @@
                   <!-- tags find -->
                   <div class="home-tags margin-common">
                     <div class="home-tags__title">
-                      <span class="title-common title-has-symbol"
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol"
                         >PRODUCT TAGS</span
                       >
                     </div>
-                    <ul class="home-tags__list">
+                    <ul class="home-tags__list p-0 l-style-none">
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">morbi</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >morbi</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common"
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
                           >accumsan</a
                         >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">ipsum</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >ipsum</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">velit</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >velit</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">nam</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >nam</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common"
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
                           >tellus</a
                         >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">aodio</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >aodio</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common"
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
                           >tincidunt</a
                         >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">autor</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >autor</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common"
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
                           >aornare odi</a
                         >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">morbi</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >morbi</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common"
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
                           >accumsan</a
                         >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">ipsum</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >ipsum</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">velit</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >velit</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">nam</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >nam</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common"
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
                           >tellus</a
                         >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">aodio</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >aodio</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common"
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
                           >tincidunt</a
                         >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common">autor</a>
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
+                          >autor</a
+                        >
                       </li>
                       <li class="home-tags__item">
-                        <a href="" class="home-tags__name desc-common"
+                        <a
+                          href=""
+                          class="home-tags__name desc-common SourceSansPro-Regular"
                           >aornare odi</a
                         >
                       </li>
@@ -567,13 +738,14 @@
                   <!-- fearture  -->
                   <div class="home-fearture margin-common">
                     <div class="home-fearture__title">
-                      <span class="title-common title-has-symbol"
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol"
                         >FEARTURE PRODUCT</span
                       >
                     </div>
                     <div class="home-fearture__list smproduct-cart">
                       <div
-                        class="smproduct-item home-fearture__item home-fearture__item--square"
+                        class="smproduct-item home-fearture__item smproduct-item--square"
                       >
                         <div
                           class="smproduct-img smproduct-img--square home-fearture__imge smproduct-img--bold home-fearture__img"
@@ -582,7 +754,7 @@
                         </div>
                         <div class="smproduct-txt home-fearture__txt">
                           <div
-                            class="smproduct-title home-fearture__title desc-common"
+                            class="smproduct-title home-fearture__title desc-common SourceSansPro-Regular"
                           >
                             Product Title Here
                           </div>
@@ -593,13 +765,15 @@
                             <i class="rate-icon rated fas fa-star"></i>
                             <i class="rate-icon fas fa-star"></i>
                           </div>
-                          <div class="smproduct-cost home-fearture__cost">
+                          <div
+                            class="smproduct-cost SourceSansPro-Light home-fearture__cost"
+                          >
                             $35.00
                           </div>
                         </div>
                       </div>
                       <div
-                        class="smproduct-item home-fearture__item home-fearture__item--square"
+                        class="smproduct-item home-fearture__item smproduct-item--square"
                       >
                         <div
                           class="smproduct-img smproduct-img--square home-fearture__img smproduct-img--pale"
@@ -609,7 +783,7 @@
                         </div>
                         <div class="smproduct-txt home-fearture__txt">
                           <div
-                            class="smproduct-title home-fearture__title desc-common"
+                            class="smproduct-title home-fearture__title desc-common SourceSansPro-Regular"
                           >
                             Product Title Here
                           </div>
@@ -620,13 +794,15 @@
                             <i class="rate-icon rated fas fa-star"></i>
                             <i class="rate-icon rated fas fa-star"></i>
                           </div>
-                          <div class="smproduct-cost home-fearture__cost">
+                          <div
+                            class="smproduct-cost SourceSansPro-Light home-fearture__cost"
+                          >
                             $35.00 - $1289.99
                           </div>
                         </div>
                       </div>
                       <div
-                        class="smproduct-item home-fearture__item home-fearture__item--square"
+                        class="smproduct-item home-fearture__item smproduct-item--square"
                       >
                         <div
                           class="smproduct-img smproduct-img--square home-fearture__img smproduct-img--pales"
@@ -636,11 +812,13 @@
                         </div>
                         <div class="smproduct-txt home-fearture__txt">
                           <div
-                            class="smproduct-title home-fearture__title desc-common"
+                            class="smproduct-title home-fearture__title desc-common SourceSansPro-Regular"
                           >
                             Product Title Here
                           </div>
-                          <div class="smproduct-cost home-fearture__cost">
+                          <div
+                            class="smproduct-cost SourceSansPro-Light home-fearture__cost"
+                          >
                             $35.00 - $89.99
                           </div>
                         </div>
@@ -650,14 +828,16 @@
                   <!-- for advertisement -->
                   <div class="home-advertise margin-common">
                     <div class="home-advertise__content">
-                      <div class="home-advertise__title">$5</div>
-                      <div class="home-advertise__subtitle">
+                      <div class="home-advertise__title Montserrat-Bold">
+                        $5
+                      </div>
+                      <div class="home-advertise__subtitle Montserrat-Bold">
                         <p class="home-advertise__subtitle-white m-0">COUPON</p>
                         <p class="home-advertise__subtitle-yellow m-0">
                           FOR FREE
                         </p>
                       </div>
-                      <div class="home-advertise__desc">
+                      <div class="home-advertise__desc SourceSansPro-Light">
                         <p class="m-0">
                           Just Signup For Our Newsletter And Get $5 To Your
                           Account
@@ -666,7 +846,9 @@
                       <div class="home-advertise__input">
                         <input type="text" placeholder="Enter Your Email" />
                       </div>
-                      <button class="home-advertise__btn btn-pri">
+                      <button
+                        class="home-advertise__btn btn-primary bg-color-charcoal color-white"
+                      >
                         SIGN UP ME
                       </button>
                     </div>
@@ -674,11 +856,14 @@
                   <!-- cart  -->
                   <div class="home-cart margin-common">
                     <div class="home-cart__title">
-                      <span class="title-common title-has-symbol">CART</span>
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol"
+                        >CART</span
+                      >
                     </div>
                     <div class="home-cart__list smproduct-cart">
                       <div
-                        class="smproduct-item home-cart__item home-fearture__item--square"
+                        class="smproduct-item home-cart__item smproduct-item--square"
                       >
                         <div
                           class="smproduct-img smproduct-img--square home-cart__imge smproduct-img--bold home-cart__img"
@@ -687,18 +872,20 @@
                         </div>
                         <div class="smproduct-txt home-cart__txt">
                           <div
-                            class="smproduct-title home-cart__title desc-common"
+                            class="smproduct-title home-cart__title desc-common SourceSansPro-Regular"
                           >
                             Product Title Here
                           </div>
 
-                          <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                          >
                             1 x $35.00 - $89.99
                           </div>
                         </div>
                       </div>
                       <div
-                        class="smproduct-item home-cart__item home-fearture__item--square"
+                        class="smproduct-item home-cart__item smproduct-item--square"
                       >
                         <div
                           class="smproduct-img smproduct-img--square home-cart__img smproduct-img--pale"
@@ -708,813 +895,967 @@
                         </div>
                         <div class="smproduct-txt home-cart__txt">
                           <div
-                            class="smproduct-title home-cart__title desc-common"
+                            class="smproduct-title home-cart__title desc-common SourceSansPro-Regular"
                           >
                             Product Title Here
                           </div>
 
-                          <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                          >
                             1 x $35.00 - $128.99
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="home-cart__total">
-                      <p class="home-cart__total--text desc-common">Total</p>
+                      <p
+                        class="home-cart__total--text desc-common SourceSansPro-Regular"
+                      >
+                        Total
+                      </p>
                       <p class="home-cart__total--number color-gray">
                         $2589.99
                       </p>
                     </div>
                     <div class="home-cart__choose">
-                      <button class="home-cart__btn btn-pri bg-pri color-white">
+                      <button
+                        class="home-cart__btn btn-primary bg-primary color-white"
+                      >
                         VIEW CART
                       </button>
                       <button
-                        class="home-cart__btn home-cart__btn--has-border btn-pri"
+                        class="home-cart__btn home-cart__btn--has-border btn-primary"
                       >
                         CHECK OUT
                       </button>
                     </div>
                   </div>
-                </div>
+                </aside>
               </div>
               <!-- content right -->
-              <div class="col col-lg-9 home-content__right">
-                <div class="row home-product__kind">
-                  <div class="col col-lg-4 home-product__item">
+              <div
+                class="col col-sm-8 col-md-9 col-lg-9 col-xl-9 home-content__right"
+              >
+                <div class="home-product">
+                  <div class="row home-product__kind">
                     <div
-                      class="product-card product-card__sort product-card--bold"
+                      class="col col-sm-12 col-md-6 col-lg-4 col-xl-4 home-product__item"
                     >
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="home-product__img product-card__img">
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                        <!-- product infor -->
-                        <div class="home-product__kind--txt">
-                          <div class="product-card__name">
-                            <p
-                              class="subtitle-common product-card__name--bottline m-0"
-                            >
-                              SALES
-                            </p>
-                            <p class="smdesc-common m-0">9 items</p>
+                      <div
+                        class="product-card product-card__sort product-card--bold"
+                      >
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="home-product__img product-card__img">
+                            <!-- <img src="" alt=""> -->
                           </div>
-                        </div>
-                        <div class="home-product__blank"></div>
-                      </a>
+                          <!-- product infor -->
+                          <div class="home-product__kind--txt">
+                            <div class="product-card__name">
+                              <p
+                                class="subtitle-common Montserrat-Bold product-card__name--bottline m-0"
+                              >
+                                SALES
+                              </p>
+                              <p
+                                class="smdesc-common SourceSansPro-Regular m-0"
+                              >
+                                9 items
+                              </p>
+                            </div>
+                          </div>
+                          <div class="home-product__blank"></div>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
                     <div
-                      class="product-card product-card__sort product-card__sort"
+                      class="col col-sm-12 col-md-6 col-lg-4 col-xl-4 home-product__item"
                     >
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="home-product__img product-card__img">
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                        <!-- product infor -->
-                        <div class="home-product__kind--txt">
-                          <div class="product-card__name">
-                            <p
-                              class="subtitle-common product-card__name--bottline m-0"
-                            >
-                              DRESSES
-                            </p>
-                            <p class="smdesc-common m-0">19 items</p>
+                      <div
+                        class="product-card product-card__sort product-card__sort"
+                      >
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="home-product__img product-card__img">
+                            <!-- <img src="" alt=""> -->
                           </div>
-                        </div>
-                        <div class="home-product__blank"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card product-card__sort">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="home-product__img product-card__img">
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                        <!-- product infor -->
-                        <div class="home-product__kind--txt">
-                          <div class="product-card__name">
-                            <p
-                              class="subtitle-common product-card__name--bottline m-0"
-                            >
-                              LINGERIE
-                            </p>
-                            <p class="smdesc-common m-0">5 items</p>
+                          <!-- product infor -->
+                          <div class="home-product__kind--txt">
+                            <div class="product-card__name">
+                              <p
+                                class="subtitle-common Montserrat-Bold product-card__name--bottline m-0"
+                              >
+                                DRESSES
+                              </p>
+                              <p
+                                class="smdesc-common SourceSansPro-Regular m-0"
+                              >
+                                19 items
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div class="home-product__blank"></div>
-                      </a>
+                          <div class="home-product__blank"></div>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card product-card__sort">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="home-product__img product-card__img">
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                        <!-- product infor -->
-                        <div class="home-product__kind--txt">
-                          <div class="product-card__name">
-                            <p
-                              class="subtitle-common product-card__name--bottline m-0"
-                            >
-                              SHIRTS
-                            </p>
-                            <p class="smdesc-common m-0">9 items</p>
-                          </div>
-                        </div>
-                        <div class="home-product__blank"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
                     <div
-                      class="product-card product-card__sort product-card--bold"
+                      class="col col-sm-12 col-md-6 col-lg-4 col-xl-4 home-product__item"
                     >
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="home-product__img product-card__img">
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                        <!-- product infor -->
-                        <div class="home-product__kind--txt">
-                          <div class="product-card__name">
-                            <p
-                              class="subtitle-common product-card__name--bottline m-0"
-                            >
-                              ACCESSORIES
-                            </p>
-                            <p class="smdesc-common m-0">19 items</p>
+                      <div class="product-card product-card__sort">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="home-product__img product-card__img">
+                            <!-- <img src="" alt=""> -->
                           </div>
-                        </div>
-                        <div class="home-product__blank"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card product-card__sort">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="home-product__img product-card__img">
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                        <!-- product infor -->
-                        <div class="home-product__kind--txt">
-                          <div class="product-card__name">
-                            <p
-                              class="subtitle-common product-card__name--bottline m-0"
-                            >
-                              BAGS
-                            </p>
-                            <p class="smdesc-common m-0">5 items</p>
+                          <!-- product infor -->
+                          <div class="home-product__kind--txt">
+                            <div class="product-card__name">
+                              <p
+                                class="subtitle-common Montserrat-Bold product-card__name--bottline m-0"
+                              >
+                                LINGERIE
+                              </p>
+                              <p
+                                class="smdesc-common SourceSansPro-Regular m-0"
+                              >
+                                5 items
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div class="home-product__blank"></div>
-                      </a>
+                          <div class="home-product__blank"></div>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                  <!-- button next & prev -->
-                  <div class="col col-lg-12 home-product__paginate">
-                    <button
-                      class="btn-pri product__paginate-btn home-product__paginate--prev"
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-4 col-xl-4 home-product__item"
                     >
-                      <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button
-                      class="btn-pri product__paginate-btn home-product__paginate--next"
+                      <div class="product-card product-card__sort">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="home-product__img product-card__img">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                          <!-- product infor -->
+                          <div class="home-product__kind--txt">
+                            <div class="product-card__name">
+                              <p
+                                class="subtitle-common Montserrat-Bold product-card__name--bottline m-0"
+                              >
+                                SHIRTS
+                              </p>
+                              <p
+                                class="smdesc-common SourceSansPro-Regular m-0"
+                              >
+                                9 items
+                              </p>
+                            </div>
+                          </div>
+                          <div class="home-product__blank"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-4 col-xl-4 home-product__item"
                     >
-                      <i class="fas fa-chevron-right"></i>
-                    </button>
-                  </div>
-                  <!-- sort and paginate -->
-                  <div class="col col-lg-12 col-md-12 col-sm-12">
-                    <div class="homepage-sort">
-                      <div class="homepage-sort__left">
-                        <div
-                          class="homepage-sort__input home-filter__input filter-common"
-                        >
-                          <span class="home-filter__input-label desc-common"
-                            >Default Sorting</span
+                      <div
+                        class="product-card product-card__sort product-card--bold"
+                      >
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="home-product__img product-card__img">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                          <!-- product infor -->
+                          <div class="home-product__kind--txt">
+                            <div class="product-card__name">
+                              <p
+                                class="subtitle-common Montserrat-Bold product-card__name--bottline m-0"
+                              >
+                                ACCESSORIES
+                              </p>
+                              <p
+                                class="smdesc-common SourceSansPro-Regular m-0"
+                              >
+                                19 items
+                              </p>
+                            </div>
+                          </div>
+                          <div class="home-product__blank"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-4 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card product-card__sort">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="home-product__img product-card__img">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                          <!-- product infor -->
+                          <div class="home-product__kind--txt">
+                            <div class="product-card__name">
+                              <p
+                                class="subtitle-common Montserrat-Bold product-card__name--bottline m-0"
+                              >
+                                BAGS
+                              </p>
+                              <p
+                                class="smdesc-common SourceSansPro-Regular m-0"
+                              >
+                                5 items
+                              </p>
+                            </div>
+                          </div>
+                          <div class="home-product__blank"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- button next & prev -->
+                    <div
+                      class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 home-product__paginate Montserrat-Light"
+                    >
+                      <button
+                        class="btn-primary home-product__paginate-btn home-product__paginate--prev"
+                      >
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <button
+                        class="btn-primary home-product__paginate-btn home-product__paginate--next"
+                      >
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                    </div>
+                    <!-- sort and paginate -->
+                    <div class="col col-sm-12 col-xl-12 col-lg-12 col-md-12">
+                      <div class="homepage-sort">
+                        <div class="homepage-sort__left">
+                          <div
+                            class="homepage-sort__input home-filter__input filter-common"
                           >
-                          <i
-                            class="home-filter__input-icon fa fa-chevron-down"
-                          ></i>
-                          <ul class="home-filter__list">
-                            <li class="home-filter__item">
-                              <a href="" class="home-filter__link desc-common"
-                                >Sorting 1</a
-                              >
-                            </li>
-                            <li class="home-filter__item">
-                              <a href="" class="home-filter__link desc-common"
-                                >Sorting 2</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="homepage-mode">
-                          <div class="homepage-mode__txt">DESC</div>
-                          <label class="homepage-sort__switch">
-                            <input type="checkbox" />
                             <span
-                              class="homepage-sort__slider homepage-sort__round"
-                            ></span>
-                          </label>
-                          <div class="homepage-mode__txt">ASC</div>
+                              class="home-filter__input-label desc-common SourceSansPro-Regular"
+                              >Default Sorting</span
+                            >
+                            <i
+                              class="home-filter__input-icon fa fa-chevron-down"
+                            ></i>
+                            <ul class="home-filter__list">
+                              <li class="home-filter__item">
+                                <a
+                                  href=""
+                                  class="home-filter__link desc-common SourceSansPro-Regular"
+                                  >Sorting 1</a
+                                >
+                              </li>
+                              <li class="home-filter__item">
+                                <a
+                                  href=""
+                                  class="home-filter__link desc-common SourceSansPro-Regular"
+                                  >Sorting 2</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="homepage-mode">
+                            <div class="homepage-mode__txt Montserrat-Light">
+                              DESC
+                            </div>
+                            <label class="homepage-sort__switch">
+                              <input
+                                class="homepage-mode__input"
+                                type="checkbox"
+                              />
+                              <span
+                                class="homepage-sort__slider homepage-sort__round"
+                              ></span>
+                            </label>
+                            <div class="homepage-mode__txt Montserrat-Light">
+                              ASC
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="homepage-sort__right">
-                        <div class="homepage-sort__numberpage desc-common">
-                          <p class="homepage-sort__desc m-0">
-                            Showing
-                            <span class="homepage-sort__current"> 1-12 </span>
-                            of
-                            <span class="homepage-sort__totalpage">17</span>
-                            results
-                          </p>
-                        </div>
-                        <div
-                          class="homepage-sort__input home-filter__input filter-common"
-                        >
-                          <span class="home-filter__input-label desc-common"
-                            >Show 12 on page</span
+                        <div class="homepage-sort__right">
+                          <div
+                            class="homepage-sort__numberpage desc-common SourceSansPro-Regular"
                           >
-                          <i
-                            class="home-filter__input-icon fa fa-chevron-down"
-                          ></i>
-                          <ul class="home-filter__list">
-                            <li class="home-filter__item">
-                              <a href="" class="home-filter__link desc-common"
-                                >Show Number page</a
-                              >
-                            </li>
-                            <li class="home-filter__item">
-                              <a href="" class="home-filter__link desc-common"
-                                >Show Number page</a
-                              >
-                            </li>
-                          </ul>
+                            <p class="homepage-sort__desc m-0">
+                              Showing
+                              <span class="homepage-sort__current"> 1-12 </span>
+                              of
+                              <span class="homepage-sort__totalpage">17</span>
+                              results
+                            </p>
+                          </div>
+                          <div
+                            class="homepage-sort__input home-filter__input filter-common"
+                          >
+                            <span
+                              class="home-filter__input-label desc-common SourceSansPro-Regular"
+                              >Show 12 on page</span
+                            >
+                            <i
+                              class="home-filter__input-icon fa fa-chevron-down"
+                            ></i>
+                            <ul class="home-filter__list">
+                              <li class="home-filter__item">
+                                <a
+                                  href=""
+                                  class="home-filter__link desc-common SourceSansPro-Regular"
+                                  >Show Number page</a
+                                >
+                              </li>
+                              <li class="home-filter__item">
+                                <a
+                                  href=""
+                                  class="home-filter__link desc-common SourceSansPro-Regular"
+                                  >Show Number page</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row home-product__list">
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- New & Sale attach -->
-                          <div class="product-card__circle--sale">SALE!</div>
-                          <div class="product-card__circle--new">NEW</div>
-                          <!-- <img src="" alt=""> -->
+                  <div class="row home-product__list">
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- New & Sale attach -->
+                            <div
+                              class="product-card__circle--sale Montserrat-Bold"
+                            >
+                              SALE!
+                            </div>
+                            <div
+                              class="product-card__circle--new Montserrat-Bold"
+                            >
+                              NEW
+                            </div>
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate -->
+                          <div class="home-product__rate rate-common">
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon fas fa-star"></i>
+                          </div>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold m-0 color-gray"
+                            >
+                              BLACK IMPRESSION
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-list"></i>
+                            <p class="m-0">View cart</p>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate -->
-                        <div class="home-product__rate rate-common">
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon fas fa-star"></i>
-                        </div>
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common m-0 color-gray"
-                          >
-                            BLACK IMPRESSION
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-list"></i>
-                          <p class="m-0">View cart</p>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- Icon rate  -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- Icon rate  -->
 
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            DEMI CLASSY SHORTS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              DEMI CLASSY SHORTS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- icon detail -->
+                          <detail class="product-card__detail">
+                            <i class="far fa-star"></i>
+                            <p class="m-0">View Wishlist</p>
+                          </detail>
                         </div>
-                        <!-- icon detail -->
-                        <detail class="product-card__detail">
-                          <i class="far fa-star"></i>
-                          <p class="m-0">View Wishlist</p>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              GOLDEN HEELS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart far fa-heart"></i>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            GOLDEN HEELS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <div class="product-card__circle--sale">SALE!</div>
-                          <!-- <img src="" alt=""> -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <div
+                              class="product-card__circle--sale Montserrat-Bold"
+                            >
+                              SALE!
+                            </div>
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
+                          <div class="home-product__rate rate-common">
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon fas fa-star"></i>
+                          </div>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              BLACK IMPRESSION
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart far fa-heart"></i>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
-                        <div class="home-product__rate rate-common">
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon fas fa-star"></i>
-                        </div>
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            BLACK IMPRESSION
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <div class="product-card__circle--new">NEW</div>
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <div
+                              class="product-card__circle--new Montserrat-Bold"
+                            >
+                              NEW
+                            </div>
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
 
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            DEMI CLASSY SHORTS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              DEMI CLASSY SHORTS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart active far fa-heart"></i>
+                          </detail>
                         </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart active far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              GOLDEN HEELS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart far fa-heart"></i>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            GOLDEN HEELS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
+                          <div class="home-product__rate rate-common">
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon fas fa-star"></i>
+                          </div>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              BLACK IMPRESSION
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart far fa-heart"></i>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
-                        <div class="home-product__rate rate-common">
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon fas fa-star"></i>
-                        </div>
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            BLACK IMPRESSION
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
 
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            DEMI CLASSY SHORTS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              DEMI CLASSY SHORTS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart active far fa-heart"></i>
+                          </detail>
                         </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart active far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              GOLDEN HEELS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart far fa-heart"></i>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            GOLDEN HEELS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
+                          <div class="home-product__rate rate-common">
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon fas fa-star"></i>
+                          </div>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              BLACK IMPRESSION
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart far fa-heart"></i>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
-                        <div class="home-product__rate rate-common">
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon fas fa-star"></i>
-                        </div>
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            BLACK IMPRESSION
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
 
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            DEMI CLASSY SHORTS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              DEMI CLASSY SHORTS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart active far fa-heart"></i>
+                          </detail>
                         </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart active far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              GOLDEN HEELS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart far fa-heart"></i>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            GOLDEN HEELS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
+                          <div class="home-product__rate rate-common">
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon rated fas fa-star"></i>
+                            <i class="rate-icon fas fa-star"></i>
+                          </div>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              BLACK IMPRESSION
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart far fa-heart"></i>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
-                        <div class="home-product__rate rate-common">
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon rated fas fa-star"></i>
-                          <i class="rate-icon fas fa-star"></i>
-                        </div>
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            BLACK IMPRESSION
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- New & Sale attach -->
-                          <div class="product-card__circle--sale">SALE!</div>
-                          <div class="product-card__circle--new">NEW</div>
-                          <!-- <img src="" alt=""> -->
-                        </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- New & Sale attach -->
+                            <div
+                              class="product-card__circle--sale Montserrat-Bold"
+                            >
+                              SALE!
+                            </div>
+                            <div
+                              class="product-card__circle--new Montserrat-Bold"
+                            >
+                              NEW
+                            </div>
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
 
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            DEMI CLASSY SHORTS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              DEMI CLASSY SHORTS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart active far fa-heart"></i>
+                          </detail>
                         </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart active far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <div class="col col-lg-4 home-product__item">
-                    <div class="product-card">
-                      <!-- product img  -->
-                      <a href="" class="home-product__link">
-                        <div class="product-card__img--heigh">
-                          <!-- <img src="" alt=""> -->
+                    <div
+                      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 home-product__item"
+                    >
+                      <div class="product-card">
+                        <!-- product img  -->
+                        <a href="" class="home-product__link">
+                          <div class="product-card__img--heigh">
+                            <!-- <img src="" alt=""> -->
+                          </div>
+                        </a>
+                        <!-- product infor -->
+                        <div class="home-product__txt">
+                          <!-- icon rate here -->
+                          <div class="product-card__name">
+                            <p
+                              class="home-product__name subtitle-common Montserrat-Bold product-card__name--topline m-0 color-gray"
+                            >
+                              GOLDEN HEELS
+                            </p>
+                            <p
+                              class="smdesc-common SourceSansPro-Regular m-0 color-primary"
+                            >
+                              $35 - $89.99
+                            </p>
+                          </div>
+                          <!-- Icon action -->
+                          <detail class="product-card__detail">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-list-alt"></i>
+                            <i class="icon-heart far fa-heart"></i>
+                          </detail>
                         </div>
-                      </a>
-                      <!-- product infor -->
-                      <div class="home-product__txt">
-                        <!-- icon rate here -->
-                        <div class="product-card__name">
-                          <p
-                            class="home-product__name subtitle-common product-card__name--topline m-0 color-gray"
-                          >
-                            GOLDEN HEELS
-                          </p>
-                          <p class="smdesc-common m-0 color-pri">
-                            $35 - $89.99
-                          </p>
-                        </div>
-                        <!-- Icon action -->
-                        <detail class="product-card__detail">
-                          <i class="fas fa-shopping-cart"></i>
-                          <i class="far fa-list-alt"></i>
-                          <i class="icon-heart far fa-heart"></i>
-                        </detail>
                       </div>
                     </div>
-                  </div>
-                  <!-- button next & prev -->
-                  <div class="col col-lg-12 home-product__paginate">
-                    <button
-                      class="btn-pri product__paginate-btn home-product__paginate--prev"
+                    <!-- button next & prev -->
+                    <div
+                      class="col col-md-12 col-lg-12 col-xl-12 home-product__paginate Montserrat-Light"
                     >
-                      <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <!-- button page number -->
-                    <button
-                      class="btn-pri product__paginate-btn product__paginate--number active"
-                    >
-                      1
-                    </button>
-                    <button
-                      class="btn-pri product__paginate-btn product__paginate--number"
-                    >
-                      2
-                    </button>
-                    <button
-                      class="btn-pri product__paginate-btn product__paginate--number"
-                    >
-                      3
-                    </button>
-                    <button
-                      class="btn-pri product__paginate-btn product__paginate--number"
-                    >
-                      4
-                    </button>
-                    <button
-                      class="btn-pri product__paginate-btn product__paginate--number"
-                    >
-                      5
-                    </button>
-                    <button
-                      class="btn-pri product__paginate-btn home-product__paginate--next"
-                    >
-                      <i class="fas fa-chevron-right"></i>
-                    </button>
+                      <button
+                        class="btn-primary home-product__paginate-btn home-product__paginate--prev"
+                      >
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <!-- button page number -->
+                      <button
+                        class="btn-primary home-product__paginate-btn product__paginate--number active"
+                      >
+                        1
+                      </button>
+                      <button
+                        class="btn-primary home-product__paginate-btn product__paginate--number"
+                      >
+                        2
+                      </button>
+                      <button
+                        class="btn-primary home-product__paginate-btn product__paginate--number"
+                      >
+                        3
+                      </button>
+                      <button
+                        class="btn-primary home-product__paginate-btn product__paginate--number"
+                      >
+                        4
+                      </button>
+                      <button
+                        class="btn-primary home-product__paginate-btn product__paginate--number"
+                      >
+                        5
+                      </button>
+                      <button
+                        class="btn-primary home-product__paginate-btn home-product__paginate--next"
+                      >
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row"></div>
           </div>
           <!-- OUR BRANDS -->
           <section class="home-brand">
             <div class="container">
               <div class="row">
                 <div class="home-brand__content">
-                  <div class="home-brand__title">
+                  <div class="home-brand__title Montserrat-Light">
                     <p class="m-0">OUR BRANDS</p>
                   </div>
-                  <ul class="home-brand__list">
+                  <ul class="home-brand__list p-0 l-style-none">
                     <li class="home-brand__item">
                       <a href="" class="home-brand__link">
                         <!-- <img src="" alt="" class="home-brand__img"> -->
@@ -1561,9 +1902,9 @@
             <div class="container">
               <div class="row">
                 <div class="home-news__title">
-                  <p class="m-0 color-txt">LATES NEWS</p>
+                  <p class="m-0 color-charcoal">LATES NEWS</p>
                 </div>
-                <ul class="home-news__list">
+                <ul class="home-news__list l-style-none p-0 m-0">
                   <li class="home-news__item">
                     <div class="product-card">
                       <div class="product-card__img home-news__img">
@@ -1571,13 +1912,16 @@
                       </div>
                       <div class="home-news__content">
                         <div class="home-news__action">
-                          <span class="home-news__author smdesc-common"
+                          <span
+                            class="home-news__author smdesc-common SourceSansPro-Regular"
                             >By
-                            <a href="" class="home-news__link color-pri"
+                            <a href="" class="home-news__link color-primary"
                               >Admin</a
                             >
                           </span>
-                          <div class="home-news__interactive desc-common">
+                          <div
+                            class="home-news__interactive desc-common SourceSansPro-Regular d-flex flex-between"
+                          >
                             <div class="home-news__comment">
                               <i
                                 class="home-news__comment--icon fas fa-comment"
@@ -1590,13 +1934,15 @@
                             </div>
                           </div>
                         </div>
-                        <div class="name-common color-txt">
+                        <div class="name-common color-charcoal">
                           <span class="home-news__name--bold">5 MAY:</span>
                           <span class="home-news__name--nor"
                             >SIMPLE BLOG POST</span
                           >
                         </div>
-                        <div class="home-news__desc desc-common">
+                        <div
+                          class="home-news__desc desc-common SourceSansPro-Regular"
+                        >
                           <p class="m-0">Lorem Ipsum. Proin</p>
                           <p class="m-0">gravida nibh vel velit autor</p>
                           <p class="m-0">aliquet. Aenean sollicitudin, lorem</p>
@@ -1604,7 +1950,7 @@
                         <div class="home-news__more">
                           <i class="fas fa-share-alt-square color-gray"></i>
                           <button
-                            class="home-news__btn btn-pri bg-overlay border-pri color-pri"
+                            class="home-news__btn btn-primary bg-overlay border-primary Montserrat-Bold color-primary"
                           >
                             READ MORE
                           </button>
@@ -1619,13 +1965,16 @@
                       </div>
                       <div class="home-news__content">
                         <div class="home-news__action">
-                          <span class="home-news__author smdesc-common"
+                          <span
+                            class="home-news__author smdesc-common SourceSansPro-Regular"
                             >By
-                            <a href="" class="home-news__link color-pri"
+                            <a href="" class="home-news__link color-primary"
                               >Admin</a
                             >
                           </span>
-                          <div class="home-news__interactive desc-common">
+                          <div
+                            class="home-news__interactive desc-common SourceSansPro-Regular d-flex flex-between d-flex flex-between"
+                          >
                             <div class="home-news__comment">
                               <i
                                 class="home-news__comment--icon fas fa-comment"
@@ -1638,13 +1987,15 @@
                             </div>
                           </div>
                         </div>
-                        <div class="name-common color-txt">
+                        <div class="name-common color-charcoal">
                           <span class="home-news__name--bold">5 MAY:</span>
                           <span class="home-news__name--nor"
                             >SIMPLE BLOG POST</span
                           >
                         </div>
-                        <div class="home-news__desc desc-common">
+                        <div
+                          class="home-news__desc desc-common SourceSansPro-Regular"
+                        >
                           <p class="m-0">Lorem Ipsum. Proin</p>
                           <p class="m-0">gravida nibh vel velit autor</p>
                           <p class="m-0">aliquet. Aenean sollicitudin, lorem</p>
@@ -1652,7 +2003,7 @@
                         <div class="home-news__more">
                           <i class="fas fa-share-alt-square color-gray"></i>
                           <button
-                            class="home-news__btn btn-pri bg-overlay border-pri color-pri"
+                            class="home-news__btn btn-primary bg-overlay border-primary Montserrat-Bold color-primary"
                           >
                             READ MORE
                           </button>
@@ -1667,13 +2018,16 @@
                       </div>
                       <div class="home-news__content">
                         <div class="home-news__action">
-                          <span class="home-news__author smdesc-common"
+                          <span
+                            class="home-news__author smdesc-common SourceSansPro-Regular"
                             >By
-                            <a href="" class="home-news__link color-pri"
+                            <a href="" class="home-news__link color-primary"
                               >Admin</a
                             >
                           </span>
-                          <div class="home-news__interactive desc-common">
+                          <div
+                            class="home-news__interactive desc-common SourceSansPro-Regular d-flex flex-between"
+                          >
                             <div class="home-news__comment">
                               <i
                                 class="home-news__comment--icon fas fa-comment"
@@ -1686,13 +2040,15 @@
                             </div>
                           </div>
                         </div>
-                        <div class="name-common color-txt">
+                        <div class="name-common color-charcoal">
                           <span class="home-news__name--bold">5 MAY:</span>
                           <span class="home-news__name--nor"
                             >SIMPLE BLOG POST</span
                           >
                         </div>
-                        <div class="home-news__desc desc-common">
+                        <div
+                          class="home-news__desc desc-common SourceSansPro-Regular"
+                        >
                           <p class="m-0">Lorem Ipsum. Proin</p>
                           <p class="m-0">gravida nibh vel velit autor</p>
                           <p class="m-0">aliquet. Aenean sollicitudin, lorem</p>
@@ -1700,7 +2056,7 @@
                         <div class="home-news__more">
                           <i class="fas fa-share-alt-square color-gray"></i>
                           <button
-                            class="home-news__btn btn-pri bg-overlay border-pri color-pri"
+                            class="home-news__btn btn-primary bg-overlay border-primary Montserrat-Bold color-primary"
                           >
                             READ MORE
                           </button>
@@ -1715,13 +2071,16 @@
                       </div>
                       <div class="home-news__content">
                         <div class="home-news__action">
-                          <span class="home-news__author smdesc-common"
+                          <span
+                            class="home-news__author smdesc-common SourceSansPro-Regular"
                             >By
-                            <a href="" class="home-news__link color-pri"
+                            <a href="" class="home-news__link color-primary"
                               >Admin</a
                             >
                           </span>
-                          <div class="home-news__interactive desc-common">
+                          <div
+                            class="home-news__interactive desc-common SourceSansPro-Regular d-flex flex-between"
+                          >
                             <div class="home-news__comment">
                               <i
                                 class="home-news__comment--icon fas fa-comment"
@@ -1734,13 +2093,15 @@
                             </div>
                           </div>
                         </div>
-                        <div class="name-common color-txt">
+                        <div class="name-common color-charcoal">
                           <span class="home-news__name--bold">5 MAY:</span>
                           <span class="home-news__name--nor"
                             >SIMPLE BLOG POST</span
                           >
                         </div>
-                        <div class="home-news__desc desc-common">
+                        <div
+                          class="home-news__desc desc-common SourceSansPro-Regular"
+                        >
                           <p class="m-0">Lorem Ipsum. Proin</p>
                           <p class="m-0">gravida nibh vel velit autor</p>
                           <p class="m-0">aliquet. Aenean sollicitudin, lorem</p>
@@ -1748,7 +2109,7 @@
                         <div class="home-news__more">
                           <i class="fas fa-share-alt-square color-gray"></i>
                           <button
-                            class="home-news__btn btn-pri bg-overlay border-pri color-pri"
+                            class="home-news__btn btn-primary bg-overlay border-primary Montserrat-Bold color-primary"
                           >
                             READ MORE
                           </button>
@@ -1770,7 +2131,9 @@
                       <p class="m-0">WE ACCEPT</p>
                       <img src="assets/img/card.png" alt="" />
                     </div>
-                    <div class="home-service__desc desc-common">
+                    <div
+                      class="home-service__desc desc-common SourceSansPro-Regular"
+                    >
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit
                       sed do eiusmod tempor icindidunt ut labore et
                     </div>
@@ -1794,31 +2157,31 @@
                     <div class="home-service__ship">
                       <div class="home-service__ship--item">
                         <img src="assets/img/check.png" alt="" />
-                        <p class="m-0 desc-common">
+                        <p class="m-0 desc-common SourceSansPro-Regular">
                           Lorem ipsum dolor sit amet, consectetur
                         </p>
                       </div>
                       <div class="home-service__ship--item">
                         <img src="assets/img/check.png" alt="" />
-                        <p class="m-0 desc-common">
+                        <p class="m-0 desc-common SourceSansPro-Regular">
                           Lorem ipsum dolor sit amet, consectetur
                         </p>
                       </div>
                       <div class="home-service__ship--item">
                         <img src="assets/img/check.png" alt="" />
-                        <p class="m-0 desc-common">
+                        <p class="m-0 desc-common SourceSansPro-Regular">
                           Adipisicing elit, sed do eiusmod tempor
                         </p>
                       </div>
                       <div class="home-service__ship--item">
                         <img src="assets/img/check.png" alt="" />
-                        <p class="m-0 desc-common">
+                        <p class="m-0 desc-common SourceSansPro-Regular">
                           Incididunt ut labore et dolore magna aliqua
                         </p>
                       </div>
                       <div class="home-service__ship--item">
                         <img src="assets/img/check.png" alt="" />
-                        <p class="m-0 desc-common">
+                        <p class="m-0 desc-common SourceSansPro-Regular">
                           Enim ad minim veniam, quis nostrud excecitation
                         </p>
                       </div>
@@ -1832,10 +2195,11 @@
           <section class="home-topproduct">
             <div class="container">
               <div class="row home-topproduct__grid">
-                <div class="col col-lg-4">
+                <div class="col col-sm-6 col-md-4 col-lg-4 col-xl-4">
                   <div class="home-topproduct__list">
                     <div class="home-topproduct__title">
-                      <span class="title-common title-has-symbol"
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol"
                         >NEW PRODUCT</span
                       >
                     </div>
@@ -1849,11 +2213,17 @@
                           <!-- <img src="" alt=""> -->
                         </div>
                         <div class="smproduct-txt home-topproduct__txt">
-                          <div class="smproduct-title desc-common">
+                          <div
+                            class="smproduct-title desc-common SourceSansPro-Regular"
+                          >
                             Product Title Here
                           </div>
-                          <div class="home-topproduct__wrap">
-                            <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="home-topproduct__wrap d-flex flex-between"
+                          >
+                            <div
+                              class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                            >
                               $35.00 - $89.99
                             </div>
                             <div class="rate-common home-fearture__rate">
@@ -1877,11 +2247,17 @@
                           <!-- <img src="" alt=""> -->
                         </div>
                         <div class="smproduct-txt home-topproduct__txt">
-                          <div class="smproduct-title desc-common">
+                          <div
+                            class="smproduct-title desc-common SourceSansPro-Regular"
+                          >
                             Product Title Here
                           </div>
-                          <div class="home-topproduct__wrap">
-                            <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="home-topproduct__wrap d-flex flex-between"
+                          >
+                            <div
+                              class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                            >
                               $35.00 - $89.99
                             </div>
                             <div class="rate-common home-fearture__rate">
@@ -1906,11 +2282,17 @@
                           <div class="smproduct-img--has-percent">%</div>
                         </div>
                         <div class="smproduct-txt home-topproduct__txt">
-                          <div class="smproduct-title desc-common">
+                          <div
+                            class="smproduct-title desc-common SourceSansPro-Regular"
+                          >
                             Product Title Here
                           </div>
-                          <div class="home-topproduct__wrap">
-                            <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="home-topproduct__wrap d-flex flex-between"
+                          >
+                            <div
+                              class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                            >
                               $35.00 - $1289.99
                             </div>
                           </div>
@@ -1919,10 +2301,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col col-lg-4">
+                <div class="col col-sm-6 col-md-4 col-lg-4 col-xl-4">
                   <div class="home-topproduct__list">
                     <div class="home-topproduct__title">
-                      <span class="title-common title-has-symbol"
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol"
                         >TOP RATED PRODUCTS</span
                       >
                     </div>
@@ -1936,11 +2319,17 @@
                           <!-- <img src="" alt=""> -->
                         </div>
                         <div class="smproduct-txt home-topproduct__txt">
-                          <div class="smproduct-title desc-common">
+                          <div
+                            class="smproduct-title desc-common SourceSansPro-Regular"
+                          >
                             Product Title Here
                           </div>
-                          <div class="home-topproduct__wrap">
-                            <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="home-topproduct__wrap d-flex flex-between"
+                          >
+                            <div
+                              class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                            >
                               $35.00 - $89.99
                             </div>
                             <div class="rate-common home-fearture__rate">
@@ -1965,11 +2354,17 @@
                           <div class="smproduct-img--has-percent">%</div>
                         </div>
                         <div class="smproduct-txt home-topproduct__txt">
-                          <div class="smproduct-title desc-common">
+                          <div
+                            class="smproduct-title desc-common SourceSansPro-Regular"
+                          >
                             Product Title Here
                           </div>
-                          <div class="home-topproduct__wrap">
-                            <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="home-topproduct__wrap d-flex flex-between"
+                          >
+                            <div
+                              class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                            >
                               $35.00 - $89.99
                             </div>
                             <div class="rate-common home-fearture__rate">
@@ -1993,11 +2388,17 @@
                           <!-- <img src="" alt=""> -->
                         </div>
                         <div class="smproduct-txt home-topproduct__txt">
-                          <div class="smproduct-title desc-common">
+                          <div
+                            class="smproduct-title desc-common SourceSansPro-Regular"
+                          >
                             Product Title Here
                           </div>
-                          <div class="home-topproduct__wrap">
-                            <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="home-topproduct__wrap d-flex flex-between"
+                          >
+                            <div
+                              class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                            >
                               $35.00 - $1289.99
                             </div>
                             <div class="rate-common home-fearture__rate">
@@ -2013,10 +2414,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="col col-lg-4">
+                <div class="col col-sm-6 col-md-4 col-lg-4 col-xl-4">
                   <div class="home-topproduct__list">
                     <div class="home-topproduct__title">
-                      <span class="title-common title-has-symbol">ON SALE</span>
+                      <span
+                        class="title-common Montserrat-Bold title-has-symbol"
+                        >ON SALE</span
+                      >
                     </div>
                     <div class="smproduct-cart home-topproduct__item">
                       <div
@@ -2029,11 +2433,17 @@
                           <div class="smproduct-img--has-percent">%</div>
                         </div>
                         <div class="smproduct-txt home-topproduct__txt">
-                          <div class="smproduct-title desc-common">
+                          <div
+                            class="smproduct-title desc-common SourceSansPro-Regular"
+                          >
                             Product Title Here
                           </div>
-                          <div class="home-topproduct__wrap">
-                            <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="home-topproduct__wrap d-flex flex-between"
+                          >
+                            <div
+                              class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                            >
                               $35.00 - $89.99
                             </div>
                           </div>
@@ -2051,11 +2461,17 @@
                           <div class="smproduct-img--has-percent">%</div>
                         </div>
                         <div class="smproduct-txt home-topproduct__txt">
-                          <div class="smproduct-title desc-common">
+                          <div
+                            class="smproduct-title desc-common SourceSansPro-Regular"
+                          >
                             Product Title Here
                           </div>
-                          <div class="home-topproduct__wrap">
-                            <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="home-topproduct__wrap d-flex flex-between"
+                          >
+                            <div
+                              class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                            >
                               $35.00 - $89.99
                             </div>
                             <div class="rate-common home-fearture__rate">
@@ -2080,11 +2496,17 @@
                           <div class="smproduct-img--has-percent">%</div>
                         </div>
                         <div class="smproduct-txt home-topproduct__txt">
-                          <div class="smproduct-title desc-common">
+                          <div
+                            class="smproduct-title desc-common SourceSansPro-Regular"
+                          >
                             Product Title Here
                           </div>
-                          <div class="home-topproduct__wrap">
-                            <div class="smproduct-cost home-cart__cost">
+                          <div
+                            class="home-topproduct__wrap d-flex flex-between"
+                          >
+                            <div
+                              class="smproduct-cost SourceSansPro-Light home-cart__cost"
+                            >
                               $35.00 - $1289.99
                             </div>
                           </div>
@@ -2106,12 +2528,16 @@
                     alt=""
                     class="home-slogan__img"
                   />
-                  <div class="home-slogan__txt color-txt">
-                    <span class="home-slogan__txt--bold">SELL MORE</span>
-                    <span class="home-slogan__txt--nor">WITH THE GEM SHOP</span>
+                  <div class="home-slogan__txt color-charcoal">
+                    <span class="home-slogan__txt--bold Montserrat-Bold"
+                      >SELL MORE</span
+                    >
+                    <span class="home-slogan__txt--nor Montserrat-Light"
+                      >WITH THE GEM SHOP</span
+                    >
                   </div>
                   <button
-                    class="home-slogan__btn btn-pri bg-overlay color-gray"
+                    class="home-slogan__btn btn-primary bg-overlay color-gray"
                   >
                     PURCHASE NOW!
                   </button>
@@ -2124,20 +2550,26 @@
       <footer class="footer">
         <div class="container">
           <div class="row footer-grid">
-            <div class="col col-lg-3">
+            <div class="col col-md-6 col-lg-3 col-xl-3">
               <div class="footer-item">
                 <div class="footer-logo">
                   <img
                     src="assets/img/logo1.png"
                     alt=""
-                    class="footer-logo_img"
+                    class="footer-logo__img"
                   />
                   <div class="footer-logo__txt">
-                    <p class="footer-logo__txt--nor m-0">THE</p>
-                    <p class="footer-logo__txt--bold m-0">GEM</p>
+                    <p class="footer-logo__txt--nor Montserrat-Light m-0">
+                      THE
+                    </p>
+                    <p class="footer-logo__txt--bold Montserrat-Bold m-0">
+                      GEM
+                    </p>
                   </div>
                 </div>
-                <div class="footer-item__desc desc-common">
+                <div
+                  class="footer-item__desc desc-common SourceSansPro-Regular"
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Repellat ipsam, error rerum nulla temporibus odit tempora
                   architecto hic nihil voluptatem distinctio consectetur in
@@ -2145,38 +2577,52 @@
               </div>
               <div class="footer-item footer-contact">
                 <div class="footer-item__title color-white">
-                  <span class="title-common title-has-symbol"> CONTACTS </span>
+                  <span class="title-common Montserrat-Bold title-has-symbol">
+                    CONTACTS
+                  </span>
                 </div>
                 <div class="footer-contact__address border-bottom-dashed">
-                  <div class="footer-contact__label desc-common">
+                  <div
+                    class="footer-contact__label desc-common SourceSansPro-Regular"
+                  >
                     <i class="fas fa-map-marker-alt"></i>
                     <span>Address: </span>
                   </div>
-                  <p class="footer-contact_txt m-0 desc-common">
+                  <p
+                    class="footer-contact_txt m-0 desc-common SourceSansPro-Regular"
+                  >
                     908 New Hampshire Avenue Northewst #100, Washington, DC
                     20037, United States
                   </p>
                 </div>
-                <div class="footer-contact__phone desc-common">
+                <div
+                  class="footer-contact__phone desc-common SourceSansPro-Regular"
+                >
                   <div class="footer-contact__label">
                     <i class="fas fa-headphones-alt"></i>
                     <label class="footer-contact__txt">Phone: </label>
                     <span
-                      ><a href="" class="desc-common">+1 916-875-2235</a></span
+                      ><a href="" class="desc-common SourceSansPro-Regular"
+                        >+1 916-875-2235</a
+                      ></span
                     >
                   </div>
                   <div class="footer-contact__label">
                     <img src="assets/img/fax.png" alt="" />
                     <label class="footer-contact__txt">Fax: </label>
                     <span
-                      ><a href="" class="desc-common">+1 916-875-2235</a></span
+                      ><a href="" class="desc-common SourceSansPro-Regular"
+                        >+1 916-875-2235</a
+                      ></span
                     >
                   </div>
                   <div class="footer-contact__label">
                     <i class="far fa-envelope"></i>
                     <label class="footer-contact__txt">Email: </label>
                     <span
-                      ><a href="" class="desc-common color-pri"
+                      ><a
+                        href=""
+                        class="desc-common SourceSansPro-Regular color-primary"
                         >info@domain.ltd</a
                       ></span
                     >
@@ -2185,7 +2631,9 @@
                     <img src="assets/img/web.png" alt="" />
                     <label class="footer-contact__txt">Website: </label>
                     <span
-                      ><a href="" class="desc-common color-pri"
+                      ><a
+                        href=""
+                        class="desc-common SourceSansPro-Regular color-primary"
                         >www.codex-themes.com</a
                       ></span
                     >
@@ -2193,11 +2641,11 @@
                 </div>
               </div>
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-6 col-lg-3 col-xl-3">
               <div class="footer-item">
                 <div class="footer-post">
                   <div class="footer-item__title color-white">
-                    <span class="title-common title-has-symbol">
+                    <span class="title-common Montserrat-Bold title-has-symbol">
                       RECENT POST
                     </span>
                   </div>
@@ -2208,10 +2656,14 @@
                       <!-- <img src="" alt=""> -->
                     </div>
                     <div class="smproduct-txt">
-                      <div class="smproduct-title desc-common">
+                      <div
+                        class="smproduct-title desc-common SourceSansPro-Regular"
+                      >
                         Proin gravida nibh vel velit auctor aliquet aenean...
                       </div>
-                      <div class="footer-post__date desc-common color-pri">
+                      <div
+                        class="footer-post__date desc-common SourceSansPro-Regular color-primary"
+                      >
                         27 Dec 2015
                       </div>
                     </div>
@@ -2223,10 +2675,14 @@
                       <!-- <img src="" alt=""> -->
                     </div>
                     <div class="smproduct-txt">
-                      <div class="smproduct-title desc-common">
+                      <div
+                        class="smproduct-title desc-common SourceSansPro-Regular"
+                      >
                         Proin gravida nibh vel velit auctor aliquet aenean...
                       </div>
-                      <div class="footer-post__date desc-common color-pri">
+                      <div
+                        class="footer-post__date desc-common SourceSansPro-Regular color-primary"
+                      >
                         27 Dec 2015
                       </div>
                     </div>
@@ -2238,10 +2694,14 @@
                       <!-- <img src="" alt=""> -->
                     </div>
                     <div class="smproduct-txt">
-                      <div class="smproduct-title desc-common">
+                      <div
+                        class="smproduct-title desc-common SourceSansPro-Regular"
+                      >
                         Proin gravida nibh vel velit auctor aliquet aenean...
                       </div>
-                      <div class="footer-post__date desc-common color-pri">
+                      <div
+                        class="footer-post__date desc-common SourceSansPro-Regular color-primary"
+                      >
                         27 Dec 2015
                       </div>
                     </div>
@@ -2251,37 +2711,52 @@
               <div class="footer-item">
                 <div class="footer-useful">
                   <div class="footer-item__title color-white">
-                    <span class="title-common title-has-symbol">
-                     USEFULL LINKS
+                    <span class="title-common Montserrat-Bold title-has-symbol">
+                      USEFULL LINKS
                     </span>
                   </div>
                   <ul class="footer-useful__list">
                     <li class="footer-useful__item border-bottom-dashed">
-                      <a href="" class="footer-useful__link desc-common">
+                      <a
+                        href=""
+                        class="footer-useful__link desc-common SourceSansPro-Regular"
+                      >
                         <i class="fas fa-circle"></i>
                         General Information For Users
                       </a>
                     </li>
                     <li class="footer-useful__item border-bottom-dashed">
-                      <a href="" class="footer-useful__link desc-common">
+                      <a
+                        href=""
+                        class="footer-useful__link desc-common SourceSansPro-Regular"
+                      >
                         <i class="fas fa-circle"></i>
                         Interactive Fairy Tales
                       </a>
                     </li>
                     <li class="footer-useful__item border-bottom-dashed">
-                      <a href="" class="footer-useful__link desc-common">
+                      <a
+                        href=""
+                        class="footer-useful__link desc-common SourceSansPro-Regular"
+                      >
                         <i class="fas fa-circle"></i>
                         Official Storybook Maker Website
                       </a>
                     </li>
                     <li class="footer-useful__item border-bottom-dashed">
-                      <a href="" class="footer-useful__link desc-common">
+                      <a
+                        href=""
+                        class="footer-useful__link desc-common SourceSansPro-Regular"
+                      >
                         <i class="fas fa-circle"></i>
                         Everyday Mathematics Links
                       </a>
                     </li>
                     <li class="footer-useful__item">
-                      <a href="" class="footer-useful__link desc-common">
+                      <a
+                        href=""
+                        class="footer-useful__link desc-common SourceSansPro-Regular"
+                      >
                         <i class="fas fa-circle"></i>
                         Basic Knowledge and Experience
                       </a>
@@ -2290,36 +2765,51 @@
                 </div>
               </div>
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-6 col-lg-3 col-xl-3">
               <div class="footer-item">
                 <div class="footer-email">
                   <div class="footer-item__title color-white">
-                    <span class="title-common title-has-symbol">
+                    <span class="title-common Montserrat-Bold title-has-symbol">
                       EMAIL US
                     </span>
                   </div>
                   <form action="" class="footer-email__form">
                     <div class="footer-email__group">
-                      <input type="text" class="footer-email__input" placeholder="Your name">
+                      <input
+                        type="text"
+                        class="footer-email__input"
+                        placeholder="Your name"
+                      />
                       <i class="fas fa-user"></i>
                     </div>
                     <div class="footer-email__group">
-                      <input type="text" class="footer-email__input" placeholder="Your@email.address">
+                      <input
+                        type="text"
+                        class="footer-email__input"
+                        placeholder="Your@email.address"
+                      />
                       <i class="far fa-envelope"></i>
                     </div>
-                    <div class="footer-email__mess desc-common">
-                      <textarea name="" id="" rows="5" placeholder="Your message"></textarea>
+                    <div
+                      class="footer-email__mess desc-common SourceSansPro-Regular"
+                    >
+                      <textarea
+                        name=""
+                        id=""
+                        rows="5"
+                        placeholder="Your message"
+                      ></textarea>
                     </div>
-                    <BUTTON class="footer-email__btn btn-pri">
+                    <button class="footer-email__btn btn-primary">
                       SEND MESSAGE
-                    </BUTTON>
+                    </button>
                   </form>
                 </div>
               </div>
               <div class="footer-item">
                 <div class="footer-project">
                   <div class="footer-item__title color-white">
-                    <span class="title-common title-has-symbol">
+                    <span class="title-common Montserrat-Bold title-has-symbol">
                       PROJECTS / CLIENTS ?
                     </span>
                   </div>
@@ -2345,17 +2835,17 @@
                   </div>
                   <div class="footer-project__control">
                     <div class="footer-project__btn active"></div>
-                    <div class="footer-project__btn "></div>
-                    <div class="footer-project__btn "></div>
+                    <div class="footer-project__btn"></div>
+                    <div class="footer-project__btn"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-6 col-lg-3 col-xl-3">
               <div class="footer-item">
                 <div class="footer-project">
                   <div class="footer-item__title color-white">
-                    <span class="title-common title-has-symbol">
+                    <span class="title-common Montserrat-Bold title-has-symbol">
                       FLICKR FEED
                     </span>
                   </div>
@@ -2393,17 +2883,22 @@
               <div class="footer-item">
                 <div class="footer-news">
                   <div class="footer-item__title color-white">
-                    <span class="title-common title-has-symbol">
+                    <span class="title-common Montserrat-Bold title-has-symbol">
                       FLICKR FEED
                     </span>
                   </div>
                   <div class="footer-news__desc">
                     <p class="m-0">
-                      Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:
+                      Subscribe to our MailChimp newsletter and stay up to date
+                      with all events coming straight in your mailbox:
                     </p>
-                  </div> 
+                  </div>
                   <div class="footer-news__wrap">
-                    <input type="text" class="footer-news__input" placeholder="Your email address">
+                    <input
+                      type="text"
+                      class="footer-news__input"
+                      placeholder="Your email address"
+                    />
                     <button class="footer-news__btn">
                       <i class="fas fa-chevron-right"></i>
                     </button>
@@ -2422,66 +2917,84 @@
         <div class="footer-widget">
           <div class="container">
             <div class="row footer-widget__grid">
-              <div class="footer-policy smdesc-common">
-                <span class="footer-policy__copyright">
-                  © Copyright 2015 
-                </span>
+              <div class="footer-policy smdesc-common SourceSansPro-Regular">
+                <span class="footer-policy__copyright"> © Copyright 2015 </span>
                 <span class="footer-policy__author">
-                  <a href="" class="footer-policy__link smdesc-common color-pri">CodexThemes</a> 
+                  <a
+                    href=""
+                    class="footer-policy__link smdesc-common SourceSansPro-Regular color-primary"
+                    >CodexThemes</a
+                  >
                 </span>
               </div>
               <div class="footer-widget__menu">
                 <ul class="footer-widget__list">
                   <li class="footer-widget__item">
-                    <a href="" class="footer-widget__link smdesc-common">Support</a>
+                    <a
+                      href=""
+                      class="footer-widget__link smdesc-common SourceSansPro-Regular"
+                      >Support</a
+                    >
                   </li>
                   <li class="footer-widget__item">
-                    <a href="" class="footer-widget__link smdesc-common">Contact Us</a>
+                    <a
+                      href=""
+                      class="footer-widget__link smdesc-common SourceSansPro-Regular"
+                      >Contact Us</a
+                    >
                   </li>
                   <li class="footer-widget__item">
-                    <a href="" class="footer-widget__link smdesc-common">Disclaimer</a>
+                    <a
+                      href=""
+                      class="footer-widget__link smdesc-common SourceSansPro-Regular"
+                      >Disclaimer</a
+                    >
                   </li>
                   <li class="footer-widget__item">
-                    <a href="" class="footer-widget__link smdesc-common">Private Policy</a>
+                    <a
+                      href=""
+                      class="footer-widget__link smdesc-common SourceSansPro-Regular"
+                      >Private Policy</a
+                    >
                   </li>
                 </ul>
               </div>
               <div class="footer-widget__social">
                 <div class="footer-widget__social--twitter">
                   <a href="" class="footer-widget__social--link">
-                     <i class="fab fa-twitter"></i>
-                    </a>
-                    </div>
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
                 <div class="footer-widget__social--facebook">
                   <a href="" class="footer-widget__social--link">
-                     <i class="fab fa-facebook-f"></i>
-                    </a>
-                    </div>
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </div>
                 <div class="footer-widget__social--linkin">
                   <a href="" class="footer-widget__social--link">
-                     <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    </div>
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
                 <div class="footer-widget__social--instagram">
                   <a href="" class="footer-widget__social--link">
-                     <i class="fab fa-instagram-square"></i>
-                    </a>
-                    </div>
+                    <i class="fab fa-instagram-square"></i>
+                  </a>
+                </div>
                 <div class="footer-widget__social--youtube">
                   <a href="" class="footer-widget__social--link">
-                     <i class="fab fa-youtube"></i>
-                    </a>
-                    </div>
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
                 <div class="footer-widget__social--gplus">
                   <a href="" class="footer-widget__social--link">
-                     <i class="fab fa-glide-g"></i>
-                    </a>
-                    </div>
+                    <i class="fab fa-glide-g"></i>
+                  </a>
+                </div>
                 <div class="footer-widget__social--pinterest">
                   <a href="" class="footer-widget__social--link">
-                     <i class="fab fa-pinterest-p"></i>
-                    </a>
-                    </div>
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -2489,6 +3002,4 @@
       </footer>
     </div>
   </body>
-
-  <script src="assets/js/main.js" type="text/javascript"></script>
 </html>

@@ -1,0 +1,18 @@
+// import libr
+@import "abstracts/variables";
+//
+@import "abstracts/font";
+//
+@import "abstracts/mixin";
+//
+@import "base/common.scss";
+//
+@import "layout/grid";
+// import page
+// import header
+@import "layout/header";
+// main
+@import "pages/home";
+//
+// import footer
+@import "layout/footer";

@@ -1,0 +1,37 @@
+@mixin absoluteItemCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin absoluteFull {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@mixin absolute($top: null, $right: null, $bottom: null, $left: null) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin bgCoverCenter {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@mixin flex($direction: row, $content: null, $items: null, $wrap: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+  flex-wrap: $wrap;
+}
+@mixin maxWidth($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

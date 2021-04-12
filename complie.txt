@@ -1,0 +1,4 @@
+complie sass 
+
+THEGEM/assets/css/sass
+ sass --w main.scss:../main.css
